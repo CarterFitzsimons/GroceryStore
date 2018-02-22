@@ -21,11 +21,10 @@ int main()
     if(input == 'a' || input == 'A'){
         cout<<"What is the item?";
         cin>>newItem;
-        if(numItems <= 5){
-            string list[numItems] = newItem;
+        if(numItems < 5){
+            list[numItems] = newItem;
             numItems = numItems + 1;
-        }
-        if(numItems > 5) {
+        }else if(numItems >= 5) {
             cout<<"You'll need a bigger list!"; 
         }
     }
