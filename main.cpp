@@ -19,13 +19,13 @@ int main()
     cin>>input;
     
     if(input == 'a' || input == 'A'){
-        cout<<"What is the item?"<<endl;;
+        cout<<"What is the item?";
         cin>>newItem;
         if(numItems < 5){
             list[numItems] = newItem;
             numItems = numItems + 1;
         }else if(numItems >= 5) {
-          cout<<"\nYou'll need a bigger list!"; 
+          cout<<"You'll need a bigger list!\n\n"; 
       }
     }
   }
