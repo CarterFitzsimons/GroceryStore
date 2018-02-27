@@ -25,11 +25,14 @@ int main()
             list[numItems] = newItem;
             numItems = numItems + 1;
         }else if(numItems >= 5) {
-            cout<<"You'll need a bigger list!\n"; 
-        }
+          cout<<"\nYou'll need a bigger list!"; 
+      }
     }
   }
   while(input != 'q' && input != 'Q');
-
+  cout<<"==ITEMS TO BUY==\n"; 
+  for(int i=0;i<5;i++){
+    cout<<i+1<<" "<<list[i]<<"\n";
+  }
   return 0;
 }
